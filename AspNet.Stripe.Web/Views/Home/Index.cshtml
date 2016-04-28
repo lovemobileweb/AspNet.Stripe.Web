@@ -1,0 +1,15 @@
+﻿@model AspNet.Stripe.Web.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div>
+    <form action="" method="post">
+        <script src="https://checkout.stripe.com/checkout.js" data-key="@Model.StripePublishableKey"></script>
+    </form>
+</div>
+
